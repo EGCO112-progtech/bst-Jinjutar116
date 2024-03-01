@@ -102,6 +102,7 @@ void postOrder( TreeNodePtr treePtr ){
    }
 }
 
+
 void tree( TreeNodePtr treePtr, int space ){
    if(treePtr == NULL) return;
    space += 1;
