@@ -9,11 +9,11 @@ int main( int argc, char** argv )
    BST b;
 
 	b.root= NULL;  b.size=0;// tree initially empty
-   for ( i = 2; i < argc; ++i ) { 
+   for ( i = 1; i < argc; ++i ) { 
       //insertNode( &b, atoi(argv[i]));
       insertNode_R(&b.root,atoi(argv[i]) );
    } // end for
-
+/*
    if(strcmp(argv[1],"-pre") == 0){
       // traverse the tree preOrder
       printf("\nThe preOrder traversal is:\n" );
@@ -32,7 +32,22 @@ int main( int argc, char** argv )
    else if(strcmp(argv[1],"-tree") == 0){
       tree( b.root, 0);
    }
+*/
+   
+   printf("\nThe preOrder traversal is:\n" );
+   preOrder( b.root );
 
+  
+   printf("\nThe postnOrder traversal is:\n" );   
+   postOrder( b.root );
+
+   
+   
+   printf("\nThe inOrder traversal is:\n" );
+   inOrder( b.root );
+
+   printf("\n");
+   tree( b.root, 0);
    printf("\n");
 } // end main
 
