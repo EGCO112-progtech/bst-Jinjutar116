@@ -38,7 +38,7 @@ int main( int argc, char** argv )
    preOrder( b.root );
 
   
-   printf("\npostnOrder\n" );   
+   printf("\npostOrder\n" );   
    postOrder( b.root );
 
    
@@ -46,7 +46,7 @@ int main( int argc, char** argv )
    printf("\ninOrder\n" );
    inOrder( b.root );
 
-   printf("\n");
+   printf("\ntree\n" );
    tree( b.root, -1);
    printf("\n");
    
