@@ -46,7 +46,7 @@ int main( int argc, char** argv )
    printf("\ninOrder\n" );
    inOrder( b.root );
 
-   printf("\ntree\n" );
+   printf("\ntreeOrder\n" );
    tree( b.root, -1);
    printf("\n");
    
