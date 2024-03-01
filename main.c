@@ -16,17 +16,17 @@ int main( int argc, char** argv )
 /*
    if(strcmp(argv[1],"-pre") == 0){
       // traverse the tree preOrder
-      printf("\nThe preOrder traversal is:\n" );
+      printf("\npreOrder\n" );
       preOrder( b.root );
    }
    else if(strcmp(argv[1],"-post") == 0){
       // traverse the tree postOrder
-      printf("\nThe postnOrder traversal is:\n" );   
+      printf("\npostnOrder\n" );   
       postOrder( b.root );
    }
    else if(strcmp(argv[1],"-in") == 0){
       // traverse the tree inOrder
-      printf("\nThe inOrder traversal is:\n" );
+      printf("\ninOrder\n" );
       inOrder( b.root );
    }
    else if(strcmp(argv[1],"-tree") == 0){
@@ -34,20 +34,21 @@ int main( int argc, char** argv )
    }
 */
    
-   printf("\nThe preOrder traversal is:\n" );
+   printf("\npreOrder\n" );
    preOrder( b.root );
 
   
-   printf("\nThe postnOrder traversal is:\n" );   
+   printf("\npostnOrder\n" );   
    postOrder( b.root );
 
    
    
-   printf("\nThe inOrder traversal is:\n" );
+   printf("\ninOrder\n" );
    inOrder( b.root );
 
    printf("\n");
-   tree( b.root, 0);
+   tree( b.root, -1);
    printf("\n");
+   
 } // end main
 
