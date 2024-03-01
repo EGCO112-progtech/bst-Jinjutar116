@@ -109,7 +109,7 @@ void tree( TreeNodePtr treePtr, int space ){
    tree(treePtr->rightPtr,space);
    int i;
    for(i=1 ; i<=space ; i++){
-      printf("    ");
+      printf("   ");
    }
    printf("%3d\n", treePtr->data);
    tree(treePtr->leftPtr,space);
